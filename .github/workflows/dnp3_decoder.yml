@@ -289,7 +289,7 @@ jobs:
             "https://api.github.com/repos/${{ github.repository }}/actions/workflows/dnp3_decoder.yml/dispatches" \
             -d @- <<EOF
           {
-            "ref": "dev",
+            "ref": "main",
             "inputs": {
               "target_branch": "${{ inputs.target_branch }}",
               "run_segment": "${next_segment}",
