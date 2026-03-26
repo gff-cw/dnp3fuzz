@@ -91,7 +91,7 @@ jobs:
       - name: Run AFL++ fuzzing on multiple cores
         shell: bash
         run: |
-          cd server_example_basic_io
+          cd iec61850-1.6.0
           mkdir -p logs
           chmod +x ./server_example_basic_io ../afl-fuzz
           export AFL_NO_UI=1
@@ -162,7 +162,7 @@ jobs:
         if: always()
         shell: bash
         run: |
-          cd server_example_basic_io
+          cd iec61850-1.6.0
           echo "===== final fuzzer_stats for all workers ====="
           found=0
           shopt -s nullglob
@@ -191,7 +191,7 @@ jobs:
           SMTP_PASS: ${{ secrets.SMTP_PASS }}
           ALERT_EMAIL: ${{ secrets.ALERT_EMAIL }}
         run: |
-          cd server_example_basic_io
+          cd iec61850-1.6.0
           shopt -s nullglob
           total_unique_crashes=0
           total_crashes=0
@@ -273,7 +273,7 @@ jobs:
         if: always()
         shell: bash
         run: |
-          cd server_example_basic_io
+          cd iec61850-1.6.0
           if [ -d outputs ]; then
             tar -czf iec61850-1.6.0-findings.tar.gz outputs
           else
