@@ -220,7 +220,7 @@ jobs:
             echo "No outputs/out_*/fuzzer_stats found"
           fi
 
-            - name: Alert GitHub user when crashes found
+      - name: Alert GitHub user when crashes found
         continue-on-error: true
         if: always()
         shell: bash
