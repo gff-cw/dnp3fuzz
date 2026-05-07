@@ -14,7 +14,7 @@ on:
       target_id:
         description: "Target/workflow label used across this workflow"
         required: true
-        default: "3112-clinet"
+        default: "3112-client"
         type: string
 
       run_segment:
