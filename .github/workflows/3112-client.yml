@@ -53,7 +53,7 @@ env:
 
   FUZZ_DIR: ${{ inputs.target_id }}
   TARGET_BIN: ./unit-test-client
-  CMPLOG_BIN: ./unit-test-clinet.cmplog
+  CMPLOG_BIN: ./unit-test-client.cmplog
   ASAN_BIN: ./server_asan
   DICT_NAME: lib.dict
   AFL_FUZZ_PATH: ../afl-fuzz
